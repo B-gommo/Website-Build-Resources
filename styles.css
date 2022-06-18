@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -18,8 +19,6 @@ h1 {
 h2,
 h3 {
   margin-left: 15px;
-
-
 }
 
 /*color classes */
@@ -31,14 +30,12 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
 }
 
 .colorbox {
   display: block;
   width: 90%;
   margin: 0px auto 15px auto;
-
 }
 
 .colorsample {
@@ -50,7 +47,6 @@ h3 {
   border: 1px solid black;
   border-radius: 0.5rem;
   overflow: hidden;
-
 }
 
 .new-leaf {
@@ -141,16 +137,18 @@ h3 {
 /*font classes */
 
 .fontmain {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border: 2px solid black;
   border-radius: 2rem;
   background-image: url(./images/fontpic.jpg);
   background-repeat: repeat;
   margin-top: 1rem;
-
-
 }
 
 .fontbox {
@@ -171,7 +169,6 @@ h3 {
   background-repeat: no-repeat;
   padding-left: 0.8rem;
   padding-top: 0.6rem;
-
 }
 
 .crimson-text {
@@ -193,9 +190,13 @@ h3 {
 /* Specific css styles section */
 
 .specific-styles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border: 2px solid black;
   border-radius: 2rem;
   background-color: aliceblue;
@@ -204,7 +205,6 @@ h3 {
 
 .specific-title {
   width: 100%;
-
 }
 
 .specific-styles p {
@@ -215,9 +215,14 @@ h3 {
 /* transitions section */
 
 .transitions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border: 2px solid black;
   border-radius: 2rem;
   background-image: url(./images/tropical.jpg);
@@ -239,7 +244,11 @@ h3 {
 }
 
 .trans-filter-1 {
+  -webkit-transition: -webkit-filter 1s ease-in 0s;
+  transition: -webkit-filter 1s ease-in 0s;
+  -o-transition: filter 1s ease-in 0s;
   transition: filter 1s ease-in 0s;
+  transition: filter 1s ease-in 0s, -webkit-filter 1s ease-in 0s;
   background-image: url(./images/monkey.jpg);
   background-size: contain;
   background-position: center;
@@ -247,11 +256,16 @@ h3 {
 }
 
 .trans-filter-1:hover {
-  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
 }
 
 .trans-filter-2 {
+  -webkit-transition: -webkit-filter 1s ease-in 0s;
+  transition: -webkit-filter 1s ease-in 0s;
+  -o-transition: filter 1s ease-in 0s;
   transition: filter 1s ease-in 0s;
+  transition: filter 1s ease-in 0s, -webkit-filter 1s ease-in 0s;
   background-image: url(./images/monkey.jpg);
   background-size: contain;
   background-position: center;
@@ -259,24 +273,33 @@ h3 {
 }
 
 .trans-filter-2:hover {
-  filter: blur(0.5rem);
+  -webkit-filter: blur(0.5rem);
+          filter: blur(0.5rem);
 }
 
 .trans-filter-3 {
+  -webkit-transition: -webkit-filter 1s ease-in 0s;
+  transition: -webkit-filter 1s ease-in 0s;
+  -o-transition: filter 1s ease-in 0s;
   transition: filter 1s ease-in 0s;
+  transition: filter 1s ease-in 0s, -webkit-filter 1s ease-in 0s;
   background-image: url(./images/monkey.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .trans-filter-3:hover {
-  filter: drop-shadow(10px 10px 1px purple);
+  -webkit-filter: drop-shadow(10px 10px 1px purple);
+          filter: drop-shadow(10px 10px 1px purple);
 }
 
 .trans-filter-4 {
+  -webkit-transition: -webkit-filter 1s ease-in 0s;
+  transition: -webkit-filter 1s ease-in 0s;
+  -o-transition: filter 1s ease-in 0s;
   transition: filter 1s ease-in 0s;
+  transition: filter 1s ease-in 0s, -webkit-filter 1s ease-in 0s;
   background-image: url(./images/monkey.jpg);
   background-size: contain;
   background-position: center;
@@ -284,11 +307,16 @@ h3 {
 }
 
 .trans-filter-4:hover {
-  filter: hue-rotate(3.142rad);
+  -webkit-filter: hue-rotate(3.142rad);
+          filter: hue-rotate(3.142rad);
 }
 
 .trans-transform-1 {
+  -webkit-transition: -webkit-transform 1s ease-in 0s;
+  transition: -webkit-transform 1s ease-in 0s;
+  -o-transition: transform 1s ease-in 0s;
   transition: transform 1s ease-in 0s;
+  transition: transform 1s ease-in 0s, -webkit-transform 1s ease-in 0s;
   background-image: url(./images/monkey.jpg);
   background-size: contain;
   background-position: center;
@@ -296,11 +324,17 @@ h3 {
 }
 
 .trans-transform-1:hover {
-  transform: scale(5, 5);
+  -webkit-transform: scale(5, 5);
+      -ms-transform: scale(5, 5);
+          transform: scale(5, 5);
 }
 
 .trans-transform-2 {
+  -webkit-transition: -webkit-transform 1s ease-in 0s;
+  transition: -webkit-transform 1s ease-in 0s;
+  -o-transition: transform 1s ease-in 0s;
   transition: transform 1s ease-in 0s;
+  transition: transform 1s ease-in 0s, -webkit-transform 1s ease-in 0s;
   background-image: url(./images/monkey.jpg);
   background-size: contain;
   background-position: center;
@@ -308,11 +342,17 @@ h3 {
 }
 
 .trans-transform-2:hover {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .trans-transform-3 {
+  -webkit-transition: -webkit-transform 1s ease-in 0s;
+  transition: -webkit-transform 1s ease-in 0s;
+  -o-transition: transform 1s ease-in 0s;
   transition: transform 1s ease-in 0s;
+  transition: transform 1s ease-in 0s, -webkit-transform 1s ease-in 0s;
   background-image: url(./images/monkey.jpg);
   background-size: contain;
   background-position: center;
@@ -320,7 +360,9 @@ h3 {
 }
 
 .trans-transform-3:hover {
-  transform: translate(50px, 20px);
+  -webkit-transform: translate(50px, 20px);
+      -ms-transform: translate(50px, 20px);
+          transform: translate(50px, 20px);
 }
 
 /* media queries */
@@ -343,7 +385,6 @@ h3 {
     width: calc(50% - 2px);
     margin-top: 0;
     height: 30rem;
-
   }
 
   .fontbox {
@@ -352,7 +393,6 @@ h3 {
     width: calc(50% - 2rem);
     height: 10rem;
     margin: 1rem 1rem;
-
   }
 
   .transitions {
@@ -361,9 +401,12 @@ h3 {
     left: 50%;
     width: calc(50% - 0.5rem);
     height: 15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex: 1 1 nowrap;
-
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 nowrap;
+            flex: 1 1 nowrap;
   }
 
   .transitions-title {
@@ -383,20 +426,23 @@ h3 {
   body {
     white-space: none;
   }
-
 }
 
 @media only screen and (max-width: 970px) {
   .colorbox {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .colorsample {
     width: 85%;
     height: 70px;
   }
-
 }
