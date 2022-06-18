@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
+
+h2,
+h3 {
+  margin-left: 15px;
+
+
+}
+
+/*color classes */
+
+.colormain {
+  border: 1px solid black;
+  border-radius: 2rem;
+  background-image: url(./images/color\ background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.colorbox {
+  display: block;
+  width: 90%;
+  margin: 0px auto 15px auto;
+
+}
+
+.colorsample {
+  display: inline-block;
+  width: 19%;
+  height: 80px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+}
+
+.new-leaf {
+  background-color: hsl(121, 60%, 39%);
+}
+
+.parmaviolet {
+  background-color: hsl(252, 78%, 67%);
+}
+
+.cactuar {
+  background-color: hsl(121, 81%, 63%);
+}
+
+.mustard {
+  background-color: hsl(27, 83%, 58%);
+}
+
+.honey {
+  background-color: hsl(27, 54%, 41%);
+
+}
+
+.sat100 {
+  background-color: hsl(121, 100%, 39%);
+}
+
+.sat75 {
+  background-color: hsl(121, 75%, 39%);
+}
+
+.sat50 {
+  background-color: hsl(121, 50%, 39%);
+}
+
+.sat25 {
+  background-color: hsl(121, 25%, 39%);
+}
+
+.sat0 {
+  background-color: hsl(121, 0%, 39%);
+}
+
+.light100 {
+  background-color: hsl(252, 78%, 100%);
+}
+
+.light75 {
+  background-color: hsl(252, 78%, 75%);
+}
+
+.light50 {
+  background-color: hsl(252, 78%, 50%);
+}
+
+.light25 {
+  background-color: hsl(252, 78%, 25%);
+  color: white;
+}
+
+.light0 {
+  background-color: hsl(252, 78%, 0%);
+  color: white;
+}
+
+.opacity100 {
+  background-color: hsl(27, 83%, 58%, 1);
+}
+
+.opacity75 {
+  background-color: hsl(27, 83%, 58%, 0.75);
+}
+
+.opacity50 {
+  background-color: hsl(27, 83%, 58%, 0.5);
+}
+
+.opacity25 {
+  background-color: hsl(27, 83%, 58%, 0.25);
+}
+
+.opacity0 {
+  background-color: hsl(27, 83%, 58%, 0);
+}
+
+
+
+/*font classes */
+
+.fontmain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-image: url(./images/fontpic.jpg);
+  background-repeat: repeat;
+  margin-top: 1rem;
+
+
+}
+
+.fontbox {
+  border: 1px solid black;
+  width: 450px;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-left: 1rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+}
+
+.font-title {
+  width: 100%;
+  height: 3rem;
+  background-image: url(./images/cloud.png);
+  background-size: 5rem;
+  background-repeat: no-repeat;
+  padding-left: 0.8rem;
+  padding-top: 0.6rem;
+
+}
+
+.crimson-text {
+  font-family: 'Crimson Text', serif;
+}
+
+.merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Specific css styles section */
+
+.specific-styles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-color: aliceblue;
+  margin-top: 1rem;
+}
+
+.specific-title {
+  width: 100%;
+
+}
+
+.specific-styles p {
+  height: 3rem;
+  margin: 1rem 0.5rem;
+}
+
+/* transitions section */
+
+.transitions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-image: url(./images/tropical.jpg);
+  margin-top: 1rem;
+}
+
+.transitions-title {
+  width: 100%;
+}
+
+.trans-box {
+  width: calc(100% / 3);
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.transitions p {
+  text-align: right;
+}
+
+.trans-filter-1 {
+  transition: filter 1s ease-in 0s;
+  background-image: url(./images/monkey.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trans-filter-1:hover {
+  filter: brightness(200%);
+}
+
+.trans-filter-2 {
+  transition: filter 1s ease-in 0s;
+  background-image: url(./images/monkey.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trans-filter-2:hover {
+  filter: blur(0.5rem);
+}
+
+.trans-filter-3 {
+  transition: filter 1s ease-in 0s;
+  background-image: url(./images/monkey.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.trans-filter-3:hover {
+  filter: drop-shadow(10px 10px 1px purple);
+}
+
+.trans-filter-4 {
+  transition: filter 1s ease-in 0s;
+  background-image: url(./images/monkey.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trans-filter-4:hover {
+  filter: hue-rotate(3.142rad);
+}
+
+.trans-transform-1 {
+  transition: transform 1s ease-in 0s;
+  background-image: url(./images/monkey.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trans-transform-1:hover {
+  transform: scale(5, 5);
+}
+
+.trans-transform-2 {
+  transition: transform 1s ease-in 0s;
+  background-image: url(./images/monkey.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trans-transform-2:hover {
+  transform: rotate(360deg);
+}
+
+.trans-transform-3 {
+  transition: transform 1s ease-in 0s;
+  background-image: url(./images/monkey.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trans-transform-3:hover {
+  transform: translate(50px, 20px);
+}
+
+/* media queries */
+
+@media only screen and (min-width: 1353px) {
+  .colormain {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 2px);
+    height: 45rem;
+  }
+
+  .colorsample {
+    height: 6.5rem;
+  }
+
+  .fontmain {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 2px);
+    margin-top: 0;
+    height: 30rem;
+
+  }
+
+  .fontbox {
+    font-display: inline-block;
+    float: left;
+    width: calc(50% - 2rem);
+    height: 10rem;
+    margin: 1rem 1rem;
+
+  }
+
+  .transitions {
+    position: absolute;
+    top: 34rem;
+    left: 50%;
+    width: calc(50% - 0.5rem);
+    height: 15rem;
+    display: flex;
+    flex: 1 1 nowrap;
+
+  }
+
+  .transitions-title {
+    width: auto;
+  }
+
+  .trans-box {
+    width: calc(100% /4);
+    height: 5rem;
+    padding: 0 0.5rem;
+  }
+
+  .specific-styles {
+    margin-top: 0.2rem;
+  }
+
+  body {
+    white-space: none;
+  }
+
+}
+
+@media only screen and (max-width: 970px) {
+  .colorbox {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .colorsample {
+    width: 85%;
+    height: 70px;
+  }
+
+}
